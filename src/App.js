@@ -1,13 +1,23 @@
 import './App.css';
-
+const app = "Hello World!"
+const className = "App-header"
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-       Hello World
+      <div className={className}>
+       {app}
+       </div>
+    </div>
+  );
+}
+function Demo() {
+  return (
+    <div className="App">
+      <div className={className}>
+       Demo
        </div>
     </div>
   );
 }
 
-export default App;
+export  {App,Demo};
